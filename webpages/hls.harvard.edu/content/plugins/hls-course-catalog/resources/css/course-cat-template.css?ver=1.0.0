@@ -1,0 +1,344 @@
+/* Miscellaneous fixes
+-------------------------------------------------------*/
+
+.page-title {
+	width: 75%;
+	left: 25%;
+	position: absolute;
+}
+
+.page-header-wrap {
+	min-height: 5em;
+}
+
+#hls-course-cat {
+	width: 75%;
+	margin: 0 auto;
+	float: right;
+}
+
+/* Fix for disabled link buttons on course permalinks */
+#hls-course-cat a.aspNetDisabled {
+	color: #333333;
+	border-bottom: 0px;
+}
+
+/* Fix for results count not centering */
+#hls-course-cat p.display-count, #hls-course-cat div.course-description p, #hls-course-cat p.center-align {
+	max-width: 100%;
+}
+
+/* Fix for the close button on results being improperly positioned */
+#hls-course-cat div.results-wrapper a.close {
+	position: relative;
+	float: right;
+	border-bottom: 0px;
+}
+#hls-course-cat div.results-wrapper p.searchResultsLinkWrapper {
+	display: inline;
+}
+
+/* Fix for background color on second row of search box */
+#hls-course-cat td.instructor-term {
+	background: #FFF;
+}
+
+/* Fixes for course listing */
+#hls-course-cat h2.course-title span {
+	font-size: 62.5%;
+	display: block;
+	margin-top: 0.75em;
+}
+#hls-course-cat h2.course-title {
+	margin-top: 0px;
+	text-align: center;
+}
+#hls-course-cat div.course-details {
+	margin-bottom: 1em;
+	line-height: 1.75em;
+	text-align: center;
+}
+#hls-course-cat p.center-align {
+	text-align: center;
+}
+
+#hls-course-cat h3 {
+	margin-top: 0.75em;
+	text-align: center;
+}
+
+/* Fix for course catalog download image */
+#hls-course-cat #CatalogControl_Main_Image_DownloadCourseCatalogPDF {
+	margin: 0 5px auto;
+}
+
+#hls-course-cat td.offering {
+	line-height: 1.75em;
+}
+
+
+/* Tables: lined
+-------------------------------------------------------*/
+
+#hls-course-cat table.lined {
+	background: #fff;
+	border-top: 1px solid #444;
+	border-bottom: 1px solid #444;
+	border-collapse: collapse;
+	width: 100%;
+	border-left: 0px;
+	border-right: 0px;
+}
+#hls-course-cat table.lined tr:nth-of-type(even) {
+	background: #fff;
+}
+#hls-course-cat table.lined td {
+	border-top: 1px solid #aaa;
+	border-bottom: 1px solid #aaa;
+}
+#hls-course-cat table.lined td,
+#hls-course-cat table.lined th {
+	padding: 10px;
+	text-align: center;
+	vertical-align: middle;
+}
+#hls-course-cat table.lined thead th {
+	background-color: #333;
+	background-color: #456;
+	border-right: 1px solid #444;
+	color: #fff;
+}
+#hls-course-cat table.lined tbody th {
+	background-color: #444;
+	background-color: #456;
+	border-top: 1px solid #222;
+	color: #fff;
+}
+#hls-course-cat table.lined td.offering,
+#hls-course-cat table.lined th.offering {
+	text-align: left;
+	width: 65%;
+}
+#hls-course-cat table.lined td.time,
+#hls-course-cat table.lined th.time {
+	text-align: right;
+	white-space: nowrap;
+	width: 25%;
+}
+#hls-course-cat table.lined td.offering a {
+	font-size: 1.1em;
+	font-weight: bold;
+}
+
+/* Tabbed panels
+-------------------------------------------------------*/
+
+#hls-course-cat ul.tabs,
+#hls-course-cat ul.tabs li {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+#hls-course-cat .panel-side-tabs ul.tabs {
+	float: left;
+	list-style: none;
+	position: relative;
+	top: 1.5em;
+	left: 0;
+}
+#hls-course-cat .panel-top-tabs {
+	clear: left;
+}
+#hls-course-cat .panel-top-tabs ul.tabs {
+	float: left;
+	list-style: none;
+	position: relative;
+	top: 1.5em;
+	left: 0;
+}
+#hls-course-cat ul.tabs li {
+	display: inline;
+}
+#hls-course-cat ul.tabs li a {
+	background: #aaa;
+	border: 1px solid #aaa;
+	color: #000;
+	display: block;
+	font-weight: bold;
+	height: 100%;
+	text-decoration: none;
+	z-index: 0;
+}
+#hls-course-cat .panel-side-tabs ul.tabs li a {
+	border-right: none;
+	margin: .5em 0;
+	padding: 1em 15px;
+	width: 140px;
+}
+#hls-course-cat .panel-top-tabs ul.tabs li a {
+	border-bottom: none;
+	float: left;
+	margin-right: 5px;
+	padding: .5em 15px;
+}
+#hls-course-cat .panel-top-tabs ul.tabs {
+	display: block;
+	margin-bottom: 1.4em;
+}
+
+#hls-course-cat #Panel_SideNav a:hover, ul.tabs li a:hover {
+	background: #333;
+	color: #fff;
+}
+#hls-course-cat ul.tabs li a.selected, ul.tabs li a.selected:hover {
+	background: #fff;
+	color: #000;
+	z-index: 200;
+}
+#hls-course-cat .panel-side-tabs .active-panel,
+#hls-course-cat .panel-top-tabs .active-panel {
+	background: #fff;
+	border: 1px solid #aaa;
+	min-height: 200px;
+	z-index: 100;
+}
+#hls-course-cat .panel-side-tabs .active-panel {
+	margin-left: 170px;
+	padding: 1em 2em 0;
+}
+#hls-course-cat .panel-top-tabs .active-panel {
+	clear: both;
+	padding: 1em 2em;
+}
+
+/* CatalogSearchPanel
+-------------------------------------------------------*/
+
+#hls-course-cat div.CatalogSearchPanel table {
+	border-style: hidden;
+	border-bottom: 1px solid #ccc;
+	width: 100%;
+}
+#hls-course-cat div.CatalogSearchPanel table td {
+	padding: .5em;
+	text-align: left;
+	vertical-align: top;
+	white-space: nowrap;
+}
+#hls-course-cat div.CatalogSearchPanel table td.search {
+	width: 57%
+}
+#hls-course-cat div.CatalogSearchPanel table td.instructor-term {
+	padding-left: 2%;
+}
+#hls-course-cat div.CatalogSearchPanel table td.subject-area {
+	padding-bottom: 1em;
+	padding-left: 2%;
+}
+#hls-course-cat div.CatalogSearchPanel table td.checkbox-group {
+	padding-left: 2em;
+	width: 14%;
+}
+#hls-course-cat div.CatalogSearchPanel div.results-display-prefs select {
+	float: right;
+	margin-top: 0.5em;
+}
+#hls-course-cat div.CatalogSearchPanel table td.reset {
+	text-align: right;
+	width: 10%;
+}
+#hls-course-cat div.CatalogSearchPanel input.clear,
+#hls-course-cat div.CatalogSearchPanel input.search,
+#hls-course-cat div.CatalogSearchPanel input.subject-area,
+#hls-course-cat div.CatalogSearchPanel input.submitImageButton,
+#hls-course-cat div.CatalogSearchPanel select {
+	display: block;
+	float: left;
+	margin-right: 5px;
+}
+/* Fix for search button */
+#hls-course-cat div.CatalogSearchPanel td.search {
+	padding-left: 1em;
+	padding-top: 1em;
+}
+#hls-course-cat div.active-panel div.CatalogSearchPanel input.search {
+	width: 85%;
+}
+#hls-course-cat div.active-panel div.CatalogSearchPanel select.instructor {
+	width: 45%;
+}
+#hls-course-cat div.active-panel div.CatalogSearchPanel select.term {
+	width: 40%;
+}
+#hls-course-cat div.active-panel div.CatalogSearchPanel select.subject-area {
+	width: 90%;
+}
+#hls-course-cat div.active-panel div.CatalogSearchPanel input.clear {
+	margin-top: 2px;
+}
+
+
+.hls-catalog-sub-nav-wrap .sub-nav {
+  list-style: none;
+  margin: 0;
+  background: #fff;
+  padding: 15px 30px;
+  padding: 0.9375rem 1.875rem;
+  border-left: 10px solid #a51c30;
+  border-left: 0.625rem solid #a51c30;
+  font-family: "Merriweather Sans", sans-serif;
+}
+
+.hls-catalog-sub-nav-wrap .sub-nav ul {
+  margin: 0;
+  list-style: none;
+}
+
+.hls-catalog-sub-nav-wrap .sub-nav li.current-menu-item > a {
+  font-weight: bold;
+  color: #333333;
+}
+
+.hls-catalog-sub-nav-wrap .sub-nav li.current-menu-item > a:hover {
+  color: #c8223a;
+}
+
+.hls-catalog-sub-nav-wrap .sub-nav .sub-menu li {
+  margin: 15px 0;
+  margin: 0.9375rem 0;
+  line-height: 1.25em;
+}
+
+.hls-catalog-sub-nav-wrap .sub-nav .sub-menu li.current-menu-item > ul, 
+.hls-catalog-sub-nav-wrap .sub-nav .sub-menu li.current-menu-ancestor > ul {
+  display: block;
+  font-size: 14px;
+  font-size: 0.875rem;
+  padding-left: 15px;
+  padding-left: 0.9375rem;
+  border-left: 1px solid #e6e6e6;
+}
+
+.hls-catalog-sub-nav-wrap .sub-nav > li > a {
+  display: block;
+  font-size: 18px;
+  font-size: 1.125rem;
+  font-weight: 700;
+  margin-bottom: 5px;
+  margin-bottom: 0.3125rem;
+  padding-bottom: 5px;
+  padding-bottom: 0.3125rem;
+  border-bottom: 1px solid #dedede;
+}
+
+.hls-catalog-sub-nav-wrap .sub-nav > li.hide-menu-item > a {
+  display: none;
+}
+
+.hls-catalog-sub-nav-wrap .sub-nav a {
+  color: #333333;
+}
+
+.hls-catalog-sub-nav-wrap .sub-nav a:hover {
+  color: #c8223a;
+}

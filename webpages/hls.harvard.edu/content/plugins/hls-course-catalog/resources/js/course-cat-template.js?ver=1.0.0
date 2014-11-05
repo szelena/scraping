@@ -1,0 +1,13 @@
+( function ( $ ) {
+	// Force menu selection state to the course catalog menu
+	$( '#menu-sec-nav-course-catalog' ).find('a').each(function () {
+		var menu_title = $(this).text();
+		if ( menu_title == 'Curriculum' ) {
+			$( this ).parent( 'li' ).addClass( 'current-menu-parent current-page-parent current-menu-ancestor' );
+		}
+		
+		if (menu_title == 'Course Catalog') {
+			$( this ).parent( 'li' ).addClass( 'current-page-item current-menu-item' );
+		}
+	});
+} )( jQuery );
